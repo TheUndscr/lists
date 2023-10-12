@@ -1,6 +1,3 @@
-import { useState } from 'react';
-import Note from '../note/Note';
-
 export default function Controls(props: {value: string, onchange: any, onclick: any}) {
     return (
         <>

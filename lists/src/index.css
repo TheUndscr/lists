@@ -3,7 +3,9 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #3d3935;
+    color: #ffeddb;
+    font-family: var(--font-family);
 }
 
 #list {

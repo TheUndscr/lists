@@ -1,0 +1,15 @@
+#notepad {
+    background-color: #252220;
+    color: #ffeddb;
+    border-width: 0px;
+    border-radius: 0;
+    outline: none;
+}
+
+#controls Button {
+    background-color: #252220;
+    color: #ffeddb;
+    border-width: 0px;
+    border-radius: 0;
+    padding: 10px;
+}
