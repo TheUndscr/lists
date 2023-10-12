@@ -1,0 +1,13 @@
+:root {
+    --font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+#list {
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 1.25rem;
+}
