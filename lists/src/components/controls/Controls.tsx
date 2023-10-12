@@ -1,30 +1,13 @@
 import { useState } from 'react';
 import Note from '../note/Note';
 
-export default function Controls() {
-    const [notes, setNotes] = useState([] as string[])
-    const [message, setMessage] = useState('');
-
-    function addNote() {
-        if (message.length === 0) {
-            window.alert("Cannot post empty note!");
-            return;
-        }
-
-        setNotes([...notes, message]);
-        setMessage('');
-    }
-
-    function changeMessage(props: {e: any}) {
-        props.e?.target.value
-    }
-
+export default function Controls(props: {value: string, onchange: any, onclick: any}) {
     return (
         <>
-            <textarea id="notepad" onClick={changeMessage} />
+            <textarea id="notepad" onChange={props.onchange} value={props.value}>{props.value}</textarea>
 
             <div id="controls">
-                <button onClick={addNote} />
+                <button onClick={props.onclick}>Post</button>
             </div>
         </>
     )
